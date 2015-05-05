@@ -1,10 +1,27 @@
 package org.p99.scala
 
-import org.scalatest._
-
 class P01Spec extends UnitSpec {
 
-  // TODO
+  /**
+   *
+   *
+    Find the last element of a list.
+    Example:
+
+    scala> last(List(1, 1, 2, 3, 5, 8))
+    res0: Int = 8
+   *
+   */
+
+  "last" should "return list last element" in {
+    assert(P01.last(List(1,2,3)) == 3)
+  }
+
+  it should "also return when list is Empty" in {
+    intercept[IllegalArgumentException]{
+      P01.last(List())
+    }
+  }
 
 }
 
