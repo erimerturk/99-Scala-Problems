@@ -1,5 +1,7 @@
 *~
 *.tgz
+.idea
+.idea/
 .*.sw*
 .DS_Store
 # Scala
